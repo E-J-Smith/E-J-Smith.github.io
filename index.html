@@ -11,7 +11,28 @@
 				background-image: url("background-for-site.jpg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
 			}	
+                        main{
+                                flex: 1;
+                                padding: 20px;
+                        }
+                        footer{
+                                background-color: grey;
+                                padding: 5px;
+                                font-size: 14px;
+                                color: white;
+                                text-align: center;
+                                position: fixed;
+                                width: 100%;
+                                left: 0;
+                                bottom: 0;
+                                display: flex;
+                                margin-right:0px;
+                                margin-left:0px;
+                        }
                         th, td, table {
                             border-radius: 10px;
                             
@@ -30,7 +51,7 @@
 	</head>
     <body>
         <!--		<img src="img2.jpg" alt="error loading your image">  -->
-		
+        <main>	
 		<h3 style="font-size: 60px; text-align: center;">Welcome to <em>my website</em></h3>
 		<h4 style="text-align: center;">Emmett Smith _ _ _ _ _ _ _ _ _ _ _ _ 09-26-2026</h4>
                 <hr width="1500px;" color="white" size="10">
@@ -72,8 +93,16 @@
                         lists are created by putting a 'ol' into a 'ul'.</td>
                     </tr>
                 </table>
-
-
-	<a href="https://goldenmaca.github.io/">My brothers website</a>
-	</body>
+        </main>
+        <footer>
+            <p class="text" style="margin-bottom: 10px; width: 25%; ">Link for assignment:
+            <a href="https://goldenmaca.github.io/">My brothers website</a></p>
+            <p class="text" style="width: 25%; margin-bottom: 10px;">Calendar:<a 
+            href="https://ict.gctaa.net/f26/courses/itd110/calendar/">
+                Web Design 2026-2027</a></p>
+            <p class="text" style="width: 25%; margin-bottom: 10px;">Calendar:<a 
+            href="https://edube.org/study/catalog/web-dev-101-html-wd101-wde-ready/course-dashboard">
+            openEDG(edube.org)</a></p>
+        </footer>
+    </body>
 </html>
