@@ -2,25 +2,27 @@
 <html lang="en">
 	<head>
 		<title>Emmett</title>
-		<script src="val.js"></script>
+		<script src="button.js" style="margin: auto;"></script>
 		<style>
 			body{
 				color: white;	
 				font-family: "Futura", sans-serif;
 				font-weight: bold;
-				background-image: url("background-for-site.jpg");
+				background-image: url("backgroundsite.jpg");
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 display: flex;
                                 flex-direction: row;
-                                flex-wrap: nowrap;
+                                flex-wrap: wrap;
+                                
+
 			}	
                         main{
                                 flex: 1;
                                 padding: 20px;
                         }
                         footer{
-                                background-color: grey;
+                                background-color: black;
                                 padding: 5px;
                                 font-size: 14px;
                                 color: white;
@@ -52,9 +54,9 @@
     <body>
         <!--		<img src="img2.jpg" alt="error loading your image">  -->
         <main>	
-		<h3 style="font-size: 60px; text-align: center;">Welcome to <em>my website</em></h3>
-		<h4 style="text-align: center;">Emmett Smith _ _ _ _ _ _ _ _ _ _ _ _ 09-26-2026</h4>
-                <hr width="1500px;" color="white" size="10">
+		<h3 style="margin-bottom: 50px; margin-top: 150px; font-size: 120px; text-align: center;">Welcome to <em>my website</em></h3>
+		<h4 style="text-align: center; ;">Emmett Smith _ _ _ _ _ _ _ _ _ _ _ _ 09-26-2026</h4>
+                <hr width="1500px;" color="white" size="10" margin-bottom="100">
 		<p class="text" style="text-align: center;">
                 This is where i will write stuff about this
                 site or about what we're doing in class.
@@ -62,7 +64,7 @@
                 <p>Romans 6:10-11</p>
                 <table border="0" cellspacing="7" cellpadding="5" align="center"
                     bgcolor="white" bordercolor="black" width="80%"
-                    height="200">
+                    height="200" margin-top="200">
                     <caption style="margin-bottom:6px; font-size: 20px;">USEFULL HTML TAGS</caption>
                     <tr style="color: black;">
                         <th>Tag</th>
@@ -93,8 +95,10 @@
                         lists are created by putting a 'ol' into a 'ul'.</td>
                     </tr>
                 </table>
+                <div id="htmlcss"></div>
+                <p><button onclick="validateHTML()">Validate HTML/CSS</button></p> 
         </main>
-        <footer>
+        <footer id="footer">
             <p class="text" style="margin-bottom: 10px; width: 25%; ">Link for assignment:
             <a href="https://goldenmaca.github.io/">My brothers website</a></p>
             <p class="text" style="width: 25%; margin-bottom: 10px;">Calendar:<a 
