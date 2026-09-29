@@ -1,50 +1,94 @@
 <!DOCTYPE html>
-<html lang=english>
+<html lang=en>
     <head>
         <title>practice page</title>
+        <script src="standardval.js"></script>
     </head>
     <body>
         <header>
             <h1>Practice site</h1>
         </header>
         <main>
+            <p>Type <kbd>git status</kbd> to see your current branch
+            changes.</p>
             <p>not complete</p>
-             <table border="0" cellspacing="7" cellpadding="5" align="center"
-                    bgcolor="white" bordercolor="black" width="80%"
-                    height="200" margin-top="200">
+             <table style="border-radius: 10px;" border="0" cellspacing="7" cellpadding="5" align="center"
+                    bgcolor="grey" bordercolor="black" width="80%"
+                    height="200">
                     <caption style="margin-bottom:6px; font-size: 20px;">USEFULL
                     <tr style="color: black;">
                         <th>Tag</th>
                         <th>Description</th>
                     </tr>
                     <tr style="color: black;">
-                        <td>"hr"</td>
+                        <td><code>hr</code></td>
                         <td>Used to create horizontal lines.
                             No closing tag. Add attributes width, color, and
                             size</td>
                     </tr>
                     <tr style="color: black;">
-                        <td>"tr" and "td"</td>
+                        <td><code>tr and td</code></td>
                         <td>"tr" tag creates a table row. The indented "td"
                         tag creates a column within that row. Ex:
                         |tr||td|"Price"|/td||/tr|</td>
                     </tr>
                     <tr style="color: black;">
-                        <td>"table"</td>
+                        <td><code>table</code></td>
                         <td>Creates a simple table that must be used with
                             closing. Attributes: border, cellspacing, bgcolor,
                         align, cellpadding, width, and height.</td>
                     </tr>
                     <tr style="color: black;">
-                        <td>"ul" and "ol"</td>
+                        <td><code>ul and ol</code></td>
                         <td>unordered and ordered lists created with these tags
                         You can use "li" to create text in these lists. Nested
                         lists are created by putting a 'ol' into a 'ul'.</td>
                     </tr>
             </table>
+            <p>system error: <samp>404 Not Found</samp>.</p>
+            <ul>
+                <li>HEADER
+                    <ol>
+                        <li>h1, h2, h3, h4, h5, h6, or any header.</li>
+                        <li>you can also add a nav bar at the top with flex</li>
+                        <li>always goes at the top of screen in the body</li>
+                    </ol>
+                </li>
+                <li>MAIN
+                    <ol>
+                        <li>can include anything</li>
+                        <li>it usually contains the main portion of the webpage</li>
+                        <li>goes inbetween the header and footer inside the body</li>
+                    </ol>
+                </li>
+                <li>FOOTER
+                    <ol>
+                        <li>usually includes links, text or socials</li>
+                        <li>can be locked to the bottom of the page and formated with flex</li>
+                        <li>found at the bottom of the screen after the &lt;main&gt;</li>
+                    </ol>
+                </li>
+                <li>FULL FORMAT
+                    <pre>
+&lt;body&gt;
+    &lt;header&gt;
+    ~~~~~~~~~~~~~~
+    &lt;/header&gt;
+    &lt;main&gt;
+    ~~~~~~~~~~~~~~
+    &lt;/main&gt;
+    &lt;footer&gt;
+    ~~~~~~~~~~~~~~
+    &lt;/footer&gt;
+&lt;/body&gt;
+                    </pre>
+
+                </li>
+            </ul>
+            
         </main>
         <footer>
-            
+            <p>this is where a footer would go</p>
         </footer>
     </body>
 </html>
