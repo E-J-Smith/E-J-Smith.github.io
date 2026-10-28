@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(73, 70, 70);
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 10px;
+}
+table, th, tr, td {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: white;
+    text-align:center;
+    margin: auto;
+    padding: 10px;
+}
+p{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
