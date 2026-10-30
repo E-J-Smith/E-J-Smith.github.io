@@ -54,3 +54,11 @@ nav ul li a{
     padding-left: 20px;
     padding-right: 20px;
 }
+a {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 1s;
+}
+
+a:hover {
+  background-color: rgba(104, 104, 104, 0.82);
+}
