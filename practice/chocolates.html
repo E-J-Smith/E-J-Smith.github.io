@@ -1,0 +1,213 @@
+ <html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(135deg, #1a2980, #26d0ce);
+                height: 100vh;
+            }
+            h1{
+                text-align: center;
+                font-family: Tahoma, sans-serif;
+                color: white;
+            }
+            .container {
+              display: grid;
+              width: 80vw;
+              height: 80vh;
+              margin: auto;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+              background-color: Thistle;
+              padding: 10px;
+              border-radius: 20px;
+              border: 8px solid red;
+            }
+            .heart {
+              height: 20vh; /* adjust to control the size */
+              aspect-ratio: 1;
+              --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+              -webkit-mask-box-image: var(--_m);
+                         mask-border: var(--_m);
+              clip-path: polygon(-41% 0,50% 91%, 141% 0);
+              background-color: chocolate;
+              margin: auto;
+            }
+            /* fallback until better support for mask-border */
+            @supports not (-webkit-mask-box-image: var(--_m)) { 
+              .heart {
+                mask:
+                 radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+                 radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+                 conic-gradient(#000 0 0) bottom/100% 50% no-repeat;
+              }
+            }
+            #chocolateheart{
+                grid-column-start: 3;
+                grid-row-start:2;
+            }
+            .lilbits{
+                grid-column-start: 1;
+                grid-row-start: 1;
+                display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+            }
+            #mnm{
+                grid-column-start:1;
+                grid-row-start:1;
+                width:10vh;
+                height:10vh;
+                background-color:red;
+                border-radius:50%;
+                margin: auto;
+                display: grid;
+                place-items: center;
+                font-size: 2em;
+            }
+            .mnm{
+                grid-column-start:1;
+                grid-row-start:1;
+                width:10vh;
+                height:10vh;
+                background-color:red;
+                border-radius:50%;
+                margin: auto;
+                display: grid;
+                place-items: center;
+                font-size: 2em;
+            }
+            #chocolatbar{
+                grid-column-start:2;
+                grid-row-start:1;
+                grid-column-end:4;
+                width:600px;
+                height:170px;
+                background-color:rgb(104, 61, 20);
+                border-radius:10px;
+                margin: auto;
+            }
+            #darkchocolate{
+                grid-column-start:2;
+                grid-row-start:3;
+                width:170px;
+                height:170px;
+                background-color:rgb(50, 30, 10);
+                border-radius:50px;
+                margin: auto;
+            }
+            #otherchocolate{
+                grid-column-start:1;
+                grid-row-start:2;
+                width:100px;
+                height:100px;
+                background-color:rgb(118, 75, 32);
+                border-radius:50px;
+                margin: auto;
+            }
+            #nextchocolate{
+                grid-column-start:2;
+                grid-row-start:2;
+                width:145px;
+                height:145px;
+                background-color:rgb(101, 60, 20);
+                border-radius:20px;
+                margin: auto;
+            }
+            #milkchocolate{
+                grid-column-start:1;
+                grid-row-start:3;
+                width:170px;
+                height:170px;
+                background-color:rgb(158, 94, 29);
+                border-radius:100px;
+                margin: auto;
+            }
+            #basechocolate{
+                grid-column-start:3;
+                grid-row-start:3;
+                width:170px;
+                height:170px;
+                background-color:rgb(105, 63, 20);
+                border-radius:25px;
+                margin: auto;
+            }
+            #caramel{
+                grid-column-start:3;
+                grid-row-start:3;
+                width:100px;
+                height:100px;
+                background-color:rgb(235, 163, 19);
+                border-radius:100px;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Here, I got you some chocolates &lt;3</h1>
+        <div class="container">
+            <div class="heart" id="chocolateheart"></div>
+            <div class="lilbits">
+                <div id="mnm">
+                m
+                </div>
+                <div class="mnm" style="grid-column-start: 2; background-color:blue">
+                n
+                </div>
+                <div class="mnm" style="grid-column-start: 3; background-color:rgb(0, 221, 255)">
+                mmm
+                </div>
+                <div class="mnm" style="grid-column-start: 4; background-color:rgb(255, 0, 238)">
+                mnm
+                </div>
+                <div class="mnm" style="grid-column-start: 5; background-color:rgb(81, 255, 0)">
+                mnm
+                </div>
+                <div id="mnm" style="grid-row-start: 2; background-color:rgb(255, 0, 106)">
+                mm
+                </div>
+                <div class="mnm" style="grid-row-start: 2; grid-column-start: 2; background-color:rgb(244, 244, 244)">
+                n
+                </div>
+                <div class="mnm" style="grid-row-start: 2; grid-column-start: 3; background-color:rgb(70, 188, 98)">
+                mn
+                </div>
+                <div class="mnm" style="grid-row-start: 2; grid-column-start: 4; background-color:rgb(255, 153, 0)">
+                mnm
+                </div>
+                <div class="mnm" style="grid-row-start: 2; grid-column-start: 5; background-color:rgb(136, 0, 255)">
+                n
+                </div>
+                <div id="mnm" style="grid-row-start: 3; background-color:rgb(68, 93, 10)">
+                m
+                </div>
+                <div class="mnm" style="grid-row-start: 3; grid-column-start: 2; background-color:rgb(140, 255, 0)">
+                m
+                </div>
+                <div class="mnm" style="grid-row-start: 3; grid-column-start: 3; background-color:rgb(0, 221, 255)">
+                mlm
+                </div>
+                <div class="mnm" style="grid-row-start: 3; grid-column-start: 4; background-color:rgb(255, 0, 0)">
+                mmm
+                </div>
+                <div class="mnm" style="grid-row-start: 3; grid-column-start: 5; background-color:rgb(81, 255, 0)">
+                n
+                </div>
+                <!-- TODO: Add some more divs here, and style them
+                    to fill in the 'lilbits' part of the chocolate box -->
+            </div>
+            <div id="chocolatbar"></div>
+            <div id="darkchocolate"></div>
+            <div id="milkchocolate"></div>
+            <div id="basechocolate"></div>
+            <div id="caramel"></div>
+            <div id="otherchocolate">
+                
+            </div>
+            <div id="nextchocolate">
+                
+            </div>
+            <!-- TODO: Add some more divs here, and style them
+                to fill in the other sections of the chocolate box -->
+        </div>
+    </body>
+</html> 
