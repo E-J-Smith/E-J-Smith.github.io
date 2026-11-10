@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 1100px; margin: 0 auto; }
+    img { display: block; width: 100%; background: #ddd; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; }
+    button { padding: 0.5rem 1.5rem; border: none; border-radius: 5px; background: #333; color: #fff; cursor: pointer; }
+    /* Layout */
+    .c1 {
+      display: grid;
+      grid:
+        'a . . . . . b c' auto
+        'd . e f g h . i' auto
+        / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding: 0.5rem;
+    }
+    .c2 {
+      padding: 1rem;
+    }
+    .c3 {
+      grid-area: b;
+      padding: 1rem;
+    }
+    .c4 {
+      grid-area: c;
+    }
+    .c5 {
+      grid-area: d;
+    }
+    .c6 {
+      grid-area: e;
+    }
+    .c7 {
+      grid-area: f;
+    }
+    .c8 {
+      grid-area: g;
+    }
+    .c9 {
+      grid-area: h;
+    }
+    .c10 {
+      grid-area: i;
+    }
+    .c11 {
+      display: grid;
+      grid:
+        'a    a    b' auto
+        'a    a    c' auto
+        'd    dd   ddd' auto
+        'e    ee   eee' auto
+        'f    ff   fff' auto
+        'g    gg   ggg' auto
+        'h    hh   hhh' auto
+        'i    ii   iii' auto
+        'j    jj   jjj' auto
+        'k    kk   kkk' auto
+        'l    ll   lll' auto
+        'm    mm   mmm' auto
+        'n    nn   nnn' auto
+        'o    oo   ooo' auto
+        'p    pp   ppp' auto
+        'q    qq   qqq' auto
+        'r    rr   rrr' auto
+        's    ss   sss' auto
+        't    tt   ttt' auto
+        'u    uu   uuu' auto
+        'v    vv   vvv' auto
+        'w    ww   www' auto
+        'x    xx   xxx' auto
+        'y    yy   yyy' auto
+        'z    zz   zzz' auto
+        'xxxx xxxx xxxx' auto
+        / 1fr 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .c12 {
+      grid-area: a;
+      aspect-ratio: 8 / 3;
+    }
+    .c13 {
+      grid-area: b;
+    }
+    .c14 {
+      grid-area: c;
+    }
+    .c15 {
+      grid-area: d;
+      aspect-ratio: 4 / 3;
+    }
+    .c16 {
+      grid-area: dd;
+      aspect-ratio: 4 / 3;
+    }
+    .c17 {
+      grid-area: ddd;
+      aspect-ratio: 4 / 3;
+    }
+    .c18 {
+      grid-area: e;
+    }
+    .c19 {
+      grid-area: ee;
+    }
+    .c20 {
+      grid-area: eee;
+    }
+    .c21 {
+      grid-area: f;
+    }
+    .c22 {
+      grid-area: ff;
+    }
+    .c23 {
+      grid-area: g;
+      aspect-ratio: 4 / 3;
+    }
+    .c24 {
+      grid-area: gg;
+      aspect-ratio: 4 / 3;
+    }
+    .c25 {
+      grid-area: ggg;
+      aspect-ratio: 4 / 3;
+    }
+    .c26 {
+      grid-area: h;
+    }
+    .c27 {
+      grid-area: hh;
+    }
+    .c28 {
+      grid-area: hhh;
+    }
+    .c29 {
+      grid-area: i;
+      aspect-ratio: 4 / 3;
+    }
+    .c30 {
+      grid-area: ii;
+      aspect-ratio: 4 / 3;
+    }
+    .c31 {
+      grid-area: iii;
+      aspect-ratio: 4 / 3;
+    }
+    .c32 {
+      grid-area: j;
+    }
+    .c33 {
+      grid-area: jj;
+    }
+    .c34 {
+      grid-area: jjj;
+    }
+    .c35 {
+      grid-area: k;
+      aspect-ratio: 4 / 3;
+    }
+    .c36 {
+      grid-area: kk;
+      aspect-ratio: 4 / 3;
+    }
+    .c37 {
+      grid-area: kkk;
+      aspect-ratio: 4 / 3;
+    }
+    .c38 {
+      grid-area: l;
+    }
+    .c39 {
+      grid-area: ll;
+    }
+    .c40 {
+      grid-area: lll;
+    }
+    .c41 {
+      grid-area: m;
+      aspect-ratio: 4 / 3;
+    }
+    .c42 {
+      grid-area: mm;
+      aspect-ratio: 4 / 3;
+    }
+    .c43 {
+      grid-area: mmm;
+      aspect-ratio: 4 / 3;
+    }
+    .c44 {
+      grid-area: n;
+    }
+    .c45 {
+      grid-area: nn;
+    }
+    .c46 {
+      grid-area: nnn;
+    }
+    .c47 {
+      grid-area: o;
+      aspect-ratio: 4 / 3;
+    }
+    .c48 {
+      grid-area: oo;
+      aspect-ratio: 4 / 3;
+    }
+    .c49 {
+      grid-area: ooo;
+      aspect-ratio: 4 / 3;
+    }
+    .c50 {
+      grid-area: p;
+    }
+    .c51 {
+      grid-area: pp;
+    }
+    .c52 {
+      grid-area: ppp;
+    }
+    .c53 {
+      grid-area: q;
+      aspect-ratio: 4 / 3;
+    }
+    .c54 {
+      grid-area: qq;
+      aspect-ratio: 4 / 3;
+    }
+    .c55 {
+      grid-area: qqq;
+      aspect-ratio: 4 / 3;
+    }
+    .c56 {
+      grid-area: r;
+    }
+    .c57 {
+      grid-area: rr;
+    }
+    .c58 {
+      grid-area: rrr;
+    }
+    .c59 {
+      grid-area: s;
+      aspect-ratio: 4 / 3;
+    }
+    .c60 {
+      grid-area: ss;
+      aspect-ratio: 4 / 3;
+    }
+    .c61 {
+      grid-area: sss;
+      aspect-ratio: 4 / 3;
+    }
+    .c62 {
+      grid-area: t;
+    }
+    .c63 {
+      grid-area: tt;
+    }
+    .c64 {
+      grid-area: ttt;
+    }
+    .c65 {
+      grid-area: u;
+      aspect-ratio: 4 / 3;
+    }
+    .c66 {
+      grid-area: uu;
+      aspect-ratio: 4 / 3;
+    }
+    .c67 {
+      grid-area: uuu;
+      aspect-ratio: 4 / 3;
+    }
+    .c68 {
+      grid-area: v;
+    }
+    .c69 {
+      grid-area: vv;
+    }
+    .c70 {
+      grid-area: vvv;
+    }
+    .c71 {
+      grid-area: w;
+      aspect-ratio: 4 / 3;
+    }
+    .c72 {
+      grid-area: ww;
+      aspect-ratio: 4 / 3;
+    }
+    .c73 {
+      grid-area: www;
+      aspect-ratio: 4 / 3;
+    }
+    .c74 {
+      grid-area: x;
+    }
+    .c75 {
+      grid-area: xx;
+    }
+    .c76 {
+      grid-area: xxx;
+    }
+    .c77 {
+      grid-area: y;
+      aspect-ratio: 4 / 3;
+    }
+    .c78 {
+      grid-area: yy;
+      aspect-ratio: 4 / 3;
+    }
+    .c79 {
+      grid-area: yyy;
+      aspect-ratio: 4 / 3;
+    }
+    .c80 {
+      grid-area: z;
+    }
+    .c81 {
+      grid-area: zz;
+    }
+    .c82 {
+      grid-area: zzz;
+    }
+    .c83 {
+      grid-area: xxxx;
+      text-align: center;
+    }
+    .c84 {
+      display: grid;
+      grid:
+        'a      b      c      .      d e        e' auto
+        'f      g      h      .      . k        .' auto
+        '.      .      .      .      . .        .' auto
+        'l      l      m      m      . n        n' auto
+        'll     ll     mm     mm     . nn       nn' auto
+        'lll    lll    mmm    mmm    . nnn      nnn' auto
+        'llll   llll   mmmm   mmmm   . nnnnn    nnnnn' auto
+        'lllll  lllll  mmmmm  mmmmm  . nnnnnn   nnnnnn' auto
+        'llllll llllll mmmmmm mmmmmm . nnnnnnnn nnnnnnnn' auto
+        'x      x      .      .      . .        .' auto
+        / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding: 0.5rem;
+    }
+    .c85 {
+      grid-area: a;
+      aspect-ratio: 4 / 3;
+    }
+    .c86 {
+      grid-area: b;
+      aspect-ratio: 4 / 3;
+    }
+    .c87 {
+      grid-area: c;
+      aspect-ratio: 4 / 3;
+    }
+    .c88 {
+      grid-area: d;
+      aspect-ratio: 4 / 3;
+    }
+    .c89 {
+      grid-area: f;
+    }
+    .c90 {
+      grid-area: g;
+    }
+    .c91 {
+      grid-area: h;
+    }
+    .c92 {
+      grid-area: k;
+    }
+    .c93 {
+      grid-area: e;
+    }
+    .c94 {
+      grid-area: l;
+    }
+    .c95 {
+      grid-area: m;
+    }
+    .c96 {
+      grid-area: n;
+    }
+    .c97 {
+      grid-area: ll;
+    }
+    .c98 {
+      grid-area: mm;
+    }
+    .c99 {
+      grid-area: nn;
+    }
+    .c100 {
+      grid-area: lll;
+    }
+    .c101 {
+      grid-area: mmm;
+    }
+    .c102 {
+      grid-area: nnn;
+    }
+    .c103 {
+      grid-area: llll;
+    }
+    .c104 {
+      grid-area: mmmm;
+    }
+    .c105 {
+      grid-area: nnnnn;
+    }
+    .c106 {
+      grid-area: lllll;
+    }
+    .c107 {
+      grid-area: mmmmm;
+    }
+    .c108 {
+      grid-area: nnnnnn;
+    }
+    .c109 {
+      grid-area: llllll;
+    }
+    .c110 {
+      grid-area: mmmmmm;
+    }
+    .c111 {
+      grid-area: nnnnnnnn;
+    }
+    .c112 {
+      grid-area: x;
+    }
+  </style>
+</head>
+<body>
+<header class="c1">
+  <div class="c2">
+
+  </div>
+  <button class="c3">Click me</button>
+  <button class="c4">Click me</button>
+  <h1 class="c5">Page Heading</h1>
+  <button class="c6">Click me</button>
+  <button class="c7">Click me</button>
+  <button class="c8">Click me</button>
+  <button class="c9">Click me</button>
+  <button class="c10">Click me</button>
+  <p>Layout cloned from <a href="https://daily.bandcamp.com/">Bandcamp</a></p>
+</header>
+<main class="c11">
+  <img src="placeholder.jpg" alt="" class="c12">
+  <h2 class="c13">Section Heading</h2>
+  <p class="c14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  <img src="placeholder.jpg" alt="" class="c15">
+  <img src="placeholder.jpg" alt="" class="c16">
+  <img src="placeholder.jpg" alt="" class="c17">
+  <button class="c18">Click me</button>
+  <button class="c19">Click me</button>
+  <button class="c20">Click me</button>
+  <h2 class="c21">Section Heading</h2>
+  <button class="c22">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c23">
+  <img src="placeholder.jpg" alt="" class="c24">
+  <img src="placeholder.jpg" alt="" class="c25">
+  <button class="c26">Click me</button>
+  <button class="c27">Click me</button>
+  <button class="c28">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c29">
+  <img src="placeholder.jpg" alt="" class="c30">
+  <img src="placeholder.jpg" alt="" class="c31">
+  <button class="c32">Click me</button>
+  <button class="c33">Click me</button>
+  <button class="c34">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c35">
+  <img src="placeholder.jpg" alt="" class="c36">
+  <img src="placeholder.jpg" alt="" class="c37">
+  <button class="c38">Click me</button>
+  <button class="c39">Click me</button>
+  <button class="c40">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c41">
+  <img src="placeholder.jpg" alt="" class="c42">
+  <img src="placeholder.jpg" alt="" class="c43">
+  <button class="c44">Click me</button>
+  <button class="c45">Click me</button>
+  <button class="c46">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c47">
+  <img src="placeholder.jpg" alt="" class="c48">
+  <img src="placeholder.jpg" alt="" class="c49">
+  <button class="c50">Click me</button>
+  <button class="c51">Click me</button>
+  <button class="c52">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c53">
+  <img src="placeholder.jpg" alt="" class="c54">
+  <img src="placeholder.jpg" alt="" class="c55">
+  <button class="c56">Click me</button>
+  <button class="c57">Click me</button>
+  <button class="c58">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c59">
+  <img src="placeholder.jpg" alt="" class="c60">
+  <img src="placeholder.jpg" alt="" class="c61">
+  <button class="c62">Click me</button>
+  <button class="c63">Click me</button>
+  <button class="c64">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c65">
+  <img src="placeholder.jpg" alt="" class="c66">
+  <img src="placeholder.jpg" alt="" class="c67">
+  <button class="c68">Click me</button>
+  <button class="c69">Click me</button>
+  <button class="c70">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c71">
+  <img src="placeholder.jpg" alt="" class="c72">
+  <img src="placeholder.jpg" alt="" class="c73">
+  <button class="c74">Click me</button>
+  <button class="c75">Click me</button>
+  <button class="c76">Click me</button>
+  <img src="placeholder.jpg" alt="" class="c77">
+  <img src="placeholder.jpg" alt="" class="c78">
+  <img src="placeholder.jpg" alt="" class="c79">
+  <button class="c80">Click me</button>
+  <button class="c81">Click me</button>
+  <button class="c82">Click me</button>
+  <h3 class="c83">Sub-heading</h3>
+</main>
+<footer class="c84">
+  <img src="placeholder.jpg" alt="" class="c85">
+  <img src="placeholder.jpg" alt="" class="c86">
+  <img src="placeholder.jpg" alt="" class="c87">
+  <img src="placeholder.jpg" alt="" class="c88">
+  <button class="c89">Click me</button>
+  <button class="c90">Click me</button>
+  <button class="c91">Click me</button>
+  <button class="c92">Click me</button>
+  <button class="c93">Click me</button>
+  <button class="c94">Click me</button>
+  <button class="c95">Click me</button>
+  <button class="c96">Click me</button>
+  <button class="c97">Click me</button>
+  <button class="c98">Click me</button>
+  <button class="c99">Click me</button>
+  <button class="c100">Click me</button>
+  <button class="c101">Click me</button>
+  <button class="c102">Click me</button>
+  <button class="c103">Click me</button>
+  <button class="c104">Click me</button>
+  <button class="c105">Click me</button>
+  <button class="c106">Click me</button>
+  <button class="c107">Click me</button>
+  <button class="c108">Click me</button>
+  <button class="c109">Click me</button>
+  <button class="c110">Click me</button>
+  <button class="c111">Click me</button>
+  <div class="c112">
+
+  </div>
+</footer>
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>
