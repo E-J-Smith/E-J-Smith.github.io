@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 1100px; margin: 0 auto; 
+        color: white; background: linear-gradient(135deg, #000000, #332d53); padding: 1rem; border-radius: 20px;/* i like doing border-radius because it makes the edges nice and rounded */ }
+    img { display: block; width: 100%; background: #ddd; }
+    h1 { font-size: 4rem; margin-bottom: 0.5rem; font-family: Tahoma, sans-serif; color: white; font-weight: bold; text-align: center; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; }
+    nav { display: flex; gap: 1rem; }
+    nav a { text-decoration: none; color: inherit; }
+    article { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+    /* Layout */
+    .c1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 0rem;
+    }
+    .c2 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c3 {
+      display: grid;
+      grid:
+        'a e c' auto
+        'a e f' auto
+        'd e f' auto
+        'd e f' auto
+        / 2fr 3fr 2fr;
+      padding: 2rem;
+    }
+    .c4 {
+      grid-area: a;
+      aspect-ratio: 8 / 3;
+    }
+    .c5 {
+      grid-area: c;
+      text-align: center;
+    }
+    .c6 {
+      grid-area: e;
+    }
+    .c7 {
+      padding: 1rem;
+    }
+    .c8 {
+      aspect-ratio: 8 / 3;
+    }
+    .c9 {
+      display: grid;
+      grid:
+        '1 . 2' auto
+        / 1fr 1fr 1fr;
+      gap: 0.5rem;
+      grid-area: f;
+      padding: 2rem;
+    }
+    .c10 {
+      padding: 0.5rem;
+    }
+    .c11 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c12 {
+      padding: 0.5rem;
+    }
+    .c13 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c14 {
+      padding: 0.5rem;
+    }
+    .c15 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c16 {
+      grid-area: d;
+    }
+    .c17 {
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+<header class="c1">
+  <img src="logo.svg" alt="" class="c2">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<main class="c3">
+  <img src="placeholder.jpg" alt="" class="c4">
+  <h2 class="c5">Popular Dishes:</h2>
+  <section class="c6">
+    <div class="c7">
+      <h1>SURF & TURF</h1>
+      </h1>
+    </div>
+    <img src="placeholder.jpg" alt="" class="c8">
+  </section>
+  <section class="c9">
+    <article class="c10">
+      <img src="placeholder.jpg" alt="" class="c11">
+      <h2>Fish & Chips</h2>
+    </article>
+    <article class="c12">
+      <img src="placeholder.jpg" alt="" class="c13">
+      <h2>Grilled Salmon</h2>
+    </article>
+    <article class="c14">
+      <img src="placeholder.jpg" alt="" class="c15">
+      <h2>Crab Cakes</h2>
+    </article>
+  </section>
+  <p class="c16" style="color: white; padding: 1rem;"><em>ABOUT US:</em> We are a small locally owned restaurant. We make food for pools in Arlington. Our most well know ingredient is fish.</p>
+</main>
+<footer class="c17">
+
+</footer>
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>
