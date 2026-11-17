@@ -7,14 +7,9 @@
 		<style>
 			body{
 				color: white;	
-				font-family: "Futura", sans-serif;
+				font-family: "SF Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 				font-weight: bold;
-                background-image: url("images/newimg.jpg");
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                display: flex;
-                                flex-direction: row;
-                                flex-wrap: wrap;
+                background: linear-gradient(135deg, #232323, #4e4e51);
 			}	
                         header{
                                 background-color: rgba(44, 43, 38, 0.439);
@@ -36,7 +31,8 @@
                                 margin-top: 60px; /* Adjust this value to account for the fixed header */
                         }
                         footer{
-                                background-color: rgba(44, 43, 38, 0.439);
+                                grid-area: footer;
+                                background-color: #28282a;
                                 padding: 5px;
                                 font-size: 11px;
                                 color: white;
@@ -45,9 +41,10 @@
                                 width: 100%;
                                 left: 0;
                                 bottom: 0;
-                                display: flex;
-                                margin-right:0px;
-                                margin-left:0px;
+                                display: grid;
+                                grid-template-columns: repeat(3, 2fr);
+                                grid-template-rows: repeat(1, 1fr);
+                                gap: 10px;
                         }
                         th, td, table {
                             border-radius: 10px;
@@ -120,19 +117,13 @@
                         lists are created by putting a 'ol' into a 'ul'.</td>
                     </tr>
                 </table>
-                <p><img src="images/newimg.jpg" alt="A barn in the middle of a field" width="320" height="240">
-                    <br>Taken by @barbarashaw find on Facebook at <a href="https://www.facebook.com/barbarashaw">Facebook</a></p>
-                <p><img src="images/newimg.jpg" alt="A barn in the middle of a field" width="640" height="480">
-                    <br>Taken by @barbarashaw find on Facebook at <a href="https://www.facebook.com/barbarashaw">Facebook</a></p>
-                <p><img src="images/newimg.jpg" alt="A barn in the middle of a field" width="1024" height="768">
-                    <br>Taken by @barbarashaw find on Facebook at <a href="https://www.facebook.com/barbarashaw">Facebook</a></p>
                 <div id="htmlcss"></div>
                 <p><button onclick="validateHTML()">Validate HTML/CSS</button></p> 
                 <p><pre>   <pre></p>
                 <p><pre>   <pre></p>
         </main>
         <footer id="footer">
-            <p class="text" style="margin-bottom: 10px; width: 20%; ">PROJECTS</p>
+            <p style="margin-bottom: 10px; width: 20%; font-size: 20px; grid-area: footer; grid-column: 1 / -1; grid-row: 1; color: white; text-align: center; margin: auto; margin-top: 20px;">PROJECTS</p>
             <p class="text" style="margin-bottom: 10px; width: 20%; ">
             <a href="https://e-j-smith.github.io/practice/schedule.html">Schedule</a></p>
             <p class="text" style="width: 20%; margin-bottom: 10px;"><a 
