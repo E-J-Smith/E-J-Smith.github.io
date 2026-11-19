@@ -9,19 +9,20 @@
 				color: white;	
 				font-family: "SF Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 				font-weight: bold;
-                background: linear-gradient(135deg, #232323, #4e4e51);
+                background: linear-gradient(135deg, #232323, #58585b);
 			}	
                         header{
-                                background-color: rgba(44, 43, 38, 0.439);
                                 padding: 5px;
-                                font-size: 14px;
+                                font-size: 11px;
                                 color: white;
                                 text-align: center;
+                                background-color: #28282a;
                                 position: fixed;
                                 width: 100%;
                                 left: 0;
                                 top: 0;
                                 display: flex;
+                                justify-content: space-around;
                                 margin-right:0px;
                                 margin-left:0px;
                         }
@@ -37,7 +38,6 @@
                                 font-size: 11px;
                                 color: white;
                                 text-align: center;
-                                
                                 width: 100%;
                                 left: 0;
                                 bottom: 0;
@@ -60,29 +60,56 @@
                                 margin: auto;
                                 margin-top: 20px;
                         }
+                        a {
+                                color:cornflowerblue;
+                                font-size: 20px;
+                                border-radius: 15px;
+                                background-color: rgb(255, 253, 253);
+                                transition: background-color 1s;
+                                transition: padding-left 1s, padding-right 1s;
+                                padding: 10px;
+                                margin: 8px;
+}
+                        a:hover {
+                                background-color: rgba(255, 255, 255, 0.775);
+                                padding-left: 20px;
+                                padding-right: 20px;
+                        }
+                        .afooterlink {
+                                color:cornflowerblue;
+                                font-size: 20px;
+                                border-radius: 5px;
+                                background-color: #28282a;
+                                padding: 0px;
+                                margin: 0px;
+                                margin: auto;
+                                margin-top: 20px;
+                                width: 20%; 
+                                margin-bottom: 10px;
+                    }
+
 		</style>
 	</head>
     <body>
         <!--		<img src="img2.jpg" alt="error loading your image">  -->
         <header>
-            <p class="text" style="margin-bottom: 10px; width: 25%; ">
-            <a href="https://e-j-smith.github.io/practice/schedule.html">Class schedule</a></p>
-            <p class="text" style="width: 25%; margin-bottom: 10px;"><a 
+            <a href="https://e-j-smith.github.io/practice/schedule.html">Class schedule</a>
+            <a 
             href="https://ict.gctaa.net/f26/courses/itd110/calendar/">
-                Web Design Calendar</a></p>
-            <p class="text" style="width: 25%; margin-bottom: 10px;"><a 
+                Web Design Calendar</a>
+            <a 
             href="https://edube.org/study/catalog/web-dev-101-html-wd101-wde-ready/course-dashboard">
-            openEDG Textbook</a></p>
+            Textbook</a>
         </header>
         <main>	
 		<h3 style="margin-bottom: 50px; margin-top: 100px; font-size: 80px; text-align: center;">Welcome to <em>my website</em></h3>
-		<h4 style="text-align: center; ;">Emmett Smith _ _ _ _ _ _ _ _ _ _ _ _ 09-26-2026</h4>
+		<h4 style="text-align: center; ;"><pre>Emmett Smith                                                      11-17-2026</pre></h4>
                 <hr width="1500px;" color="white" size="10">
 		<p class="text" style="text-align: center;">
                 This is where i will write stuff about this
                 site or about what we're doing in class. Winston Churchill:
                 "Success is not final, failure is not fatal: It is the courage to continue that counts."
-                <br>last update: 09-26-2026</p>
+                <br>last update: 11-17-2026</p>
                 <p>Romans 6:10-11</p>
                 <table border="0" cellspacing="7" cellpadding="5" align="center"
                     bgcolor="white" bordercolor="black" width="80%"
@@ -101,7 +128,7 @@
                     <tr style="color: black;">
                         <td>"tr" and "td"</td>
                         <td>"tr" tag creates a table row. The indented "td"
-                        tag creates a column within that row. Ex: 
+                        tag creates a column within that row. Ex:
                         |tr||td|"Price"|/td||/tr|</td>
                     </tr>
                     <tr style="color: black;">
@@ -124,11 +151,11 @@
         </main>
         <footer id="footer">
             <p style="margin-bottom: 10px; width: 20%; font-size: 20px; grid-area: footer; grid-column: 1 / -1; grid-row: 1; color: white; text-align: center; margin: auto; margin-top: 20px;">PROJECTS</p>
-            <p class="text" style="margin-bottom: 10px; width: 20%; ">
-            <a href="https://e-j-smith.github.io/practice/schedule.html">Schedule</a></p>
-            <p class="text" style="width: 20%; margin-bottom: 10px;"><a 
+            <p class="afooterlink">
+            <a class="afooterlink" href="https://e-j-smith.github.io/practice/schedule.html">Schedule</a></p>
+            <p class="afooterlink"><a class="afooterlink"
             href="https://e-j-smith.github.io/practice/terminal.html">Terminal</a></p>
-            <p class="text" style="width: 20%; margin-bottom: 10px;"><a 
+            <p class="afooterlink"><a class="afooterlink"
             href="https://e-j-smith.github.io/projects/recipes/index.html">
             Recipes</a></p>
         </footer>
